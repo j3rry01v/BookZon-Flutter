@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/services/phoneauth_service.dart';
 
 class PhoneAuthScreen extends StatefulWidget {
   static const String id = 'phone-auth-screen';
@@ -32,6 +33,8 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
           return alert;
         });
   }
+
+  PhoneAuthService _service = PhoneAuthService();
 
   phoneAuthentication(number) {
     print(number);
@@ -75,7 +78,7 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
               height: 10,
             ),
             Text(
-              "We will send you a confirmation ode",
+              "We will send you a confirmation code",
               style: TextStyle(color: Colors.grey),
             ),
             Row(
@@ -145,7 +148,8 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
                   String number =
                       '${countryCodeController.text}${phoneNumberController.text}';
                   showAlertDialogue(context);
-                  phoneAuthentication(number);
+                  _service.verifyPhoneNumber(context, number);
+                  // phoneAuthentication(number);
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),

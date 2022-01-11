@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "985184046350",
+    "project_id": "bookzoneflutter",
+    "storage_bucket": "bookzoneflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985184046350:android:c9d5699dff496299e75b5f",
+        "android_client_info": {
+          "package_name": "com.example.book_zone01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985184046350-0diu353e114oe4j6ii3j36b4a7ncmvdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.book_zone01",
+            "certificate_hash": "d8380fc638438e13b035da57e21a72329283594c"
+          }
+        },
+        {
+          "client_id": "985184046350-i4hcg6oj9kfuj85h6lmenvcjbhbug1lt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDh9ZT-sGqcHwM0qTfUHcyZcLa_vIyp5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985184046350-i4hcg6oj9kfuj85h6lmenvcjbhbug1lt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
